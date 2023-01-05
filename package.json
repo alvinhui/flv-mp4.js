@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "gulp watch",
     "build": "gulp release",
-    "serve": "http-server -p 8000 ."
+    "server": "http-server -p 8000 ."
   },
   "dependencies": {
     "es6-promise": "^4.1.0",
@@ -48,6 +48,12 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0"
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  },
+  "engines": {
+    "node": "18"
   },
   "author": "zheng qian <xqq@xqq.im>",
   "license": "Apache-2.0"
